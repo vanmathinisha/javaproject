@@ -13,15 +13,15 @@ public static void insertdata()throws Exception{
 	String Query="insert into hospital_details values(?,?,?,?,?,?,?,?,?)";
 	Connection con=DriverManager. getConnection(url,username,password);
 	PreparedStatement pst=con.prepareStatement(Query);
-	pst.setString(1,"Riyaz");
-	pst.setInt(2,006);
-	pst.setString(3,"vellore");
+	pst.setString(1,"saravanan");
+	pst.setInt(2,007);
+	pst.setString(3,"trichy");
 	pst.setString(4,"pharmacy");
 	pst.setInt(5,16);
 	pst.setString(6,"Chennai" );
-	pst.setString(7, "riyaz");
-	pst.setString(8, "riyaz235");
-	pst.setString(9, "riyaz1234@gmail.com");
+	pst.setString(7, "saravana");
+	pst.setString(8, "sar235");
+	pst.setString(9, "sara1234@gmail.com");
 	pst.executeUpdate();
 	con.close();
 	
